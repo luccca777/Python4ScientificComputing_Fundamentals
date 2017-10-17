@@ -1,5 +1,5 @@
 def wallCalc_withParallel(wall_withParallel):
-    Material_library = {"Wood bevel lapped siding":0.14,"Wood fiber board,13mm":0.23,"Glass fiber insulation":0.70,"Wood stud,38mm*90mm":0.63,"Gypsum wallboard,13mm":0.079,"OutSurface 24km/h wind":0.03,"InsideSurface still air":0.12}    
+    Material_library = {"AsphaltRoofing":0.077,"Wood_50mm":0.44,"Wood bevel lapped siding":0.14,"Wood fiber board,13mm":0.23,"Glass fiber insulation":0.70,"Wood stud,38mm*90mm":0.63,"Gypsum wallboard,13mm":0.079,"OutSurface 24km/h wind":0.03,"InsideSurface still air":0.12}    
     layers_wall_complete = wall_withParallel
     Rtot_withParallel = 0
     RValues_layers = []
@@ -21,7 +21,7 @@ def wallCalc_withParallel(wall_withParallel):
 
 
 def wallCalc_onlyInSeries(wall_onlyInSeries):
-    Material_library = {"Wood bevel lapped siding":0.14,"Wood fiberboard sheeting,13mm":0.23,"Wood stud,38mm*90mm":0.63,"Gypsum wallboard,13mm":0.079,"OutSurface 24km/h wind":0.03,"InsideSurface still air":0.12}    
+    Material_library = {"AsphaltRoofing":0.077,"Wood_50mm":0.44,"Wood bevel lapped siding":0.14,"Wood fiberboard sheeting,13mm":0.23,"Wood stud,38mm*90mm":0.63,"Gypsum wallboard,13mm":0.079,"OutSurface 24km/h wind":0.03,"InsideSurface still air":0.12}    
     airOnTwoSides = ["OutSurface 24km/h wind","InsideSurface still air"]
     layers_wall_complete = wall_onlyInSeries + airOnTwoSides
     Rtot_onlyInSeries = 0
